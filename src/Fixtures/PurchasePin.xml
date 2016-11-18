@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Body>
+        <PurchasePinResponse xmlns="http://www.pininteract.com">
+            <orderResponse version="1.0" responseCode="000" xmlns="urn:pininteract.com">
+                <invoice invoiceNumber="5578488" transactionDateTime="2013-11-14T14:31:08.08" invoiceAmount="14.850" faceValueAmount="15.00">
+                    <cards>
+                        <card skuId="175" name="Airvoice Unlimited" faceValue="15.00">
+                            <pins>
+                                <pin pinNumber="10097505452535" controlNumber="111111111111"/>
+                            </pins>
+                        </card>
+                    </cards>
+                </invoice>
+            </orderResponse>
+        </PurchasePinResponse>
+    </soap:Body>
+</soap:Envelope>

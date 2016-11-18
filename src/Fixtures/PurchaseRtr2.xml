@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Body>
+        <PurchaseRtr2Response xmlns="http://www.pininteract.com">
+            <orderResponse version="1.0" responseCode="000" xmlns="urn:pininteract.com">
+                <invoice invoiceNumber="5578488" transactionDateTime="2013-11-14T14:31:08.08" invoiceAmount="14.850" faceValueAmount="15.00">
+                    <cards/>
+                </invoice>
+                <topup localCurrencyAmount="15.00" salesTaxAmount="0" localCurrencyAmountExcludingTax="15.00" localCurrencyName="USD" newAccountBalance=""/>
+            </orderResponse>
+        </PurchaseRtr2Response>
+    </soap:Body>
+</soap:Envelope>

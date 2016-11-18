@@ -1,0 +1,8 @@
+finder:
+    in:
+        - src
+        - tests
+parameters:
+    author: YNLO-Ultratech Development Team <developer@ynloultratech.com>
+    package: prepaynation-api
+    version: 1.0.x-dev

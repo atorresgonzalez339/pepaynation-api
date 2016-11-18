@@ -1,0 +1,44 @@
+{
+  "name": "ynloultratech/prepaynation-api",
+  "description": "API implementation to communicate with Prepay Nation and make payments",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "YNLO-Ultratech Development Team",
+      "email": "developer@ynloultratech.com",
+      "homepage": "https://github.com/ynloultratech"
+    }
+  ],
+  "keywords": [
+    "api",
+    "sdk",
+    "prepay",
+    "nation"
+  ],
+  "autoload": {
+    "psr-4": {
+      "YnloUltratech\\PrepayNation\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "YnloUltratech\\PrepayNation\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=5.5",
+    "rafrsr/generic-api": "^2.0",
+    "rafrsr/lib-array2object": "^1.0",
+    "rafrsr/lib-array2xml": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.1.*",
+    "satooshi/php-coveralls": "~1.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}

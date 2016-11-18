@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+         bootstrap="vendor/autoload.php"
+        >
+    <php>
+        <!-- The following data are used for tests purposes and only works in MOCK mode,
+         this is not a real data of PrepayNation for production or sandbox.
+         These values can be changed for real data to tests credentials in production or sandbox env of PrepayNation -->
+        <env name="API_TEST_MODE" value="MOCK"/>
+        <env name="API_USERNAME" value="username"/>
+        <env name="API_PASSWORD" value="password"/>
+    </php>
+    <testsuites>
+        <testsuite name="PrepayNation Test Suite">
+            <directory>./tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>./src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
