@@ -55,9 +55,9 @@ class PrepayNationApiResponse
             /** @var array $response */
             $response = array_values(array_values($body)[0])[0];
             if (isset($response['@attributes']) && $data = $response['@attributes']) {
-                $errorCode = @$data['responseCode'];
-                $responseMessage = @$data['responseMessage'];
-                if ($errorCode && $errorCode > 0) {
+                if (isset($data['responseCode'], $data['responseMessage'])) {
+                    $errorCode = $data['responseCode'];
+                    $responseMessage = $data['responseMessage'];
                     $responseMessage = $responseMessage ?: 'Prepay Nation Error: '.$errorCode;
                     throw new ApiErrorHappenException($responseMessage, $errorCode);
                 }
