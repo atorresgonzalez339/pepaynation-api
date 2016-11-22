@@ -35,7 +35,7 @@ abstract class PrepayNationApiMock implements ApiMockInterface
         $action       = current(array_keys($body));
 
         try {
-            $responseData = $this->mockService([]);
+            $responseData = $this->mockService(current($body));
         } catch (\RuntimeException $e) {
             return new Response(500, [], \GuzzleHttp\Psr7\stream_for($e->getMessage()));
         } catch (\Exception $e) {

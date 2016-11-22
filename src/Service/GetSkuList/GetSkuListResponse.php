@@ -35,6 +35,9 @@ class GetSkuListResponse extends PrepayNationApiResponse
         parent::__construct($response);
 
         $skuArray = @$this->getResponse()['soap:Envelope']['soap:Body']['GetSkuListResponse']['GetSkuListResult']['skus']['sku'];
+        if (!$skuArray){
+            $skuArray = @$this->getResponse()['soap:Envelope']['soap:Body']['GetSkuListByCarrierResponse']['GetSkuListByCarrierResult']['skus']['sku'];
+        }
         $this->skus = [];
         if ($skuArray && is_array($skuArray)) {
             foreach ($skuArray as $carrierArray) {

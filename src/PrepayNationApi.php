@@ -81,13 +81,15 @@ class PrepayNationApi extends GenericApi
     }
 
     /**
-     * Return a list of the valid skus.
+     * Return a list of valid skus.
+     *
+     * @param integer $carrierId filter by carrier
      *
      * @return Sku[]
      */
-    public function getSkuList()
+    public function getSkuList($carrierId = null)
     {
-        $response = $this->process(new GetSkuList());
+        $response = $this->process(new GetSkuList($carrierId));
 
         return (new GetSkuListResponse($response))->getSkus();
     }

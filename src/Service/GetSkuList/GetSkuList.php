@@ -25,6 +25,21 @@ use YnloUltratech\PrepayNation\Service\PrepayNationBaseService;
 class GetSkuList extends PrepayNationBaseService implements Object2ArrayInterface
 {
     /**
+     * @var integer
+     */
+    protected $carrierId;
+
+    /**
+     * GetSkuList constructor.
+     *
+     * @param $carrierId
+     */
+    public function __construct($carrierId = null)
+    {
+        $this->carrierId = $carrierId;
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function buildRequest(ApiRequestBuilder $requestBuilder, ApiInterface $api)
@@ -38,9 +53,15 @@ class GetSkuList extends PrepayNationBaseService implements Object2ArrayInterfac
      */
     public function __toArray()
     {
-        return [
+        $params = [
             'version' => PrepayNationApi::VERSION,
         ];
+
+        if ($this->carrierId) {
+            $params['carrierId'] = $this->carrierId;
+        }
+
+        return $params;
     }
 
     /**
@@ -48,6 +69,6 @@ class GetSkuList extends PrepayNationBaseService implements Object2ArrayInterfac
      */
     protected function getActionName()
     {
-        return 'GetSkuList';
+        return $this->carrierId ? 'GetSkuListByCarrier' : 'GetSkuList';
     }
 }

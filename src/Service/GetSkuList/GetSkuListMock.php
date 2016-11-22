@@ -25,6 +25,10 @@ class GetSkuListMock extends PrepayNationApiMock
      */
     protected function mockService($data)
     {
+        if (isset($data['carrierId'])) {
+            return $this->loadFixture('GetSkuListByCarrier.xml');
+        }
+
         return $this->loadFixture('GetSkuList.xml');
     }
 }

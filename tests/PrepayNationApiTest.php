@@ -55,6 +55,13 @@ class PrepayNationApiTest extends \PHPUnit_Framework_TestCase
         self::assertEquals('Natcom Haiti $6-100', $sku->getProductName());
     }
 
+    public function testGetSkuListByCarrier()
+    {
+        $skus = $this->api->getSkuList(172);
+        $sku = $skus[0];
+        self::assertEquals('Simple$25', $sku->getProductName());
+    }
+
     public function testPurchaseRTR()
     {
         $response = $this->api->purchaseRTR('1262', '1', '1111111111', time());
