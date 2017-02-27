@@ -41,6 +41,15 @@ class PrepayNationApiTest extends \PHPUnit_Framework_TestCase
         static::assertEquals($credentials, $api->getCredentials());
     }
 
+    public function testGetCarrierInfoByMobileNumber()
+    {
+        $carriers = $this->api->getCarrierInfoByMobileNumber('13057766760');
+        self::assertEquals('T-Mobile US  Open Range', $carriers[0]->getCarrierName());
+        self::assertEquals('T-Mobile US  Open Range', $carriers[0]->getSkus()[0]->getProductName());
+        self::assertEquals(10, $carriers[0]->getSkus()[0]->getMinAmount());
+        self::assertEquals(100, $carriers[0]->getSkus()[0]->getMaxAmount());
+    }
+
     public function testGetCarrierList()
     {
         $carriers = $this->api->getCarrierList(null, 'USD');

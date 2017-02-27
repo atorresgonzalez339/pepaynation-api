@@ -62,6 +62,11 @@ class Carrier
     private $denominationType;
 
     /**
+     * @var array|Sku[]
+     */
+    private $skus = [];
+
+    /**
      * @return int
      */
     public function getCarrierId()
@@ -219,6 +224,22 @@ class Carrier
         $this->denominationType = $denominationType;
 
         return $this;
+    }
+
+    /**
+     * @return array|Sku[]
+     */
+    public function getSkus()
+    {
+        return $this->skus;
+    }
+
+    /**
+     * @param array|Sku[] $skus
+     */
+    public function setSkus($skus)
+    {
+        $this->skus = $skus;
     }
 
     /**

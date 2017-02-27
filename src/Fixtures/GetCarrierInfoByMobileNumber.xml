@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetCarrierInfoByMobileNumberResponse xmlns="http://www.pininteract.com">
+            <GetCarrierInfoByMobileNumberResult responseCode="000">
+                <carrier carrierId="131" carrierName="T-Mobile US  Open Range" category="Rtr" countryCode="US" currencyCode="USD" productId="131" operator="51" denominationType="Variable">
+                    <skus>
+                        <sku skuId="322" productName="T-Mobile US  Open Range" denomination="0.01" minAmount="10.00" maxAmount="100.00" discount="5.00" category="Rtr" isSalesTaxCharged="false" exchangeRate="1" bonusAmount="0" currencyCode="USD" carrierName="T-Mobile US  Open Range" countryCode="US" localPhoneNumberLength="10" internationalCodes="1" allowDecimal="false" fee="0" carrierId="0" operatorId="0"/>
+                    </skus>
+                </carrier>
+            </GetCarrierInfoByMobileNumberResult>
+        </GetCarrierInfoByMobileNumberResponse>
+    </soap:Body>
+</soap:Envelope>

@@ -20,6 +20,8 @@ use Rafrsr\GenericApi\GenericApi;
 use Rafrsr\LibArray2Xml\XML2Array;
 use YnloUltratech\PrepayNation\Data\Carrier;
 use YnloUltratech\PrepayNation\Data\Sku;
+use YnloUltratech\PrepayNation\Service\GetCarrierInfoByMobileNumber\GetCarrierInfoByMobileNumber;
+use YnloUltratech\PrepayNation\Service\GetCarrierInfoByMobileNumber\GetCarrierInfoByMobileNumberResponse;
 use YnloUltratech\PrepayNation\Service\GetCarrierList\GetCarrierList;
 use YnloUltratech\PrepayNation\Service\GetCarrierList\GetCarrierListResponse;
 use YnloUltratech\PrepayNation\Service\GetSkuList\GetSkuList;
@@ -46,7 +48,7 @@ class PrepayNationApi extends GenericApi
      */
     public function getCredentials()
     {
-        if ( ! $this->credentials) {
+        if (!$this->credentials) {
             return new PrepayNationApiCredentials();
         }
 
@@ -63,6 +65,20 @@ class PrepayNationApi extends GenericApi
         $this->credentials = $credentials;
 
         return $this;
+    }
+
+    /**
+     * Return a list of the valid carriers by the mobile Number
+     *
+     * @param $mobileNumber
+     *
+     * @return Carrier[]
+     */
+    public function getCarrierInfoByMobileNumber($mobileNumber)
+    {
+        $response = $this->process(new GetCarrierInfoByMobileNumber($mobileNumber));
+
+        return (new GetCarrierInfoByMobileNumberResponse($response))->getCarriers();
     }
 
     /**
