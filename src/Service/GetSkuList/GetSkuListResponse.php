@@ -34,9 +34,17 @@ class GetSkuListResponse extends PrepayNationApiResponse
     {
         parent::__construct($response);
 
-        $skuArray = @$this->getResponse()['soap:Envelope']['soap:Body']['GetSkuListResponse']['GetSkuListResult']['skus']['sku'];
-        if (!$skuArray){
-            $skuArray = @$this->getResponse()['soap:Envelope']['soap:Body']['GetSkuListByCarrierResponse']['GetSkuListByCarrierResult']['skus']['sku'];
+        if (isset($this->getResponse()['soap:Envelope']['soap:Body']['GetSkuListResponse']['GetSkuListResult']['skus']['sku'][0])) {
+            $skuArray = @$this->getResponse()['soap:Envelope']['soap:Body']['GetSkuListResponse']['GetSkuListResult']['skus']['sku'];
+        } else {
+            $skuArray = @$this->getResponse()['soap:Envelope']['soap:Body']['GetSkuListResponse']['GetSkuListResult']['skus'];
+        }
+        if (!$skuArray) {
+            if (isset($this->getResponse()['soap:Envelope']['soap:Body']['GetSkuListByCarrierResponse']['GetSkuListByCarrierResult']['skus']['sku'][0])) {
+                $skuArray = @$this->getResponse()['soap:Envelope']['soap:Body']['GetSkuListByCarrierResponse']['GetSkuListByCarrierResult']['skus']['sku'];
+            } else {
+                $skuArray = @$this->getResponse()['soap:Envelope']['soap:Body']['GetSkuListByCarrierResponse']['GetSkuListByCarrierResult']['skus'];
+            }
         }
         $this->skus = [];
         if ($skuArray && is_array($skuArray)) {
