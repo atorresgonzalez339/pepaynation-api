@@ -1,142 +1,368 @@
-<?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <soap:Body>
         <GetCarrierList2Response xmlns="http://www.pininteract.com">
             <carrierListResponse version="1.0" responseCode="000" xmlns="urn:pininteract.com">
                 <carriers>
-                    <carrier carrierId="8" carrierName="ATT" category="Pin" countryCode="US" currencyCode="USD" productId="8" operator="ATT" denominationType="Variable"/>
-                    <carrier carrierId="9" carrierName="Boost" category="Pin" countryCode="US" currencyCode="USD" productId="9" operator="Boost" denominationType="Fixed"/>
-                    <carrier carrierId="11" carrierName="TMobile" category="Pin" countryCode="US" currencyCode="USD" productId="11" operator="TMobile" denominationType="Fixed"/>
-                    <carrier carrierId="12" carrierName="Verizon" category="Pin" countryCode="US" currencyCode="USD" productId="12" operator="Verizon" denominationType="Variable"/>
-                    <carrier carrierId="13" carrierName="Airvoice" category="Pin" countryCode="US" currencyCode="USD" productId="13" operator="Airvoice" denominationType="Variable"/>
-                    <carrier carrierId="16" carrierName="Tracfone" category="Pin" countryCode="US" currencyCode="USD" productId="16" operator="Tracfone" denominationType="Variable"/>
-                    <carrier carrierId="17" carrierName="STI" category="Pin" countryCode="US" currencyCode="USD" productId="17" operator="STI" denominationType="Variable"/>
-                    <carrier carrierId="19" carrierName="Page Plus" category="Pin" countryCode="US" currencyCode="USD" productId="19" operator="Page Plus" denominationType="Variable"/>
-                    <carrier carrierId="20" carrierName="Juici Patty" category="Pin" countryCode="US" currencyCode="USD" productId="20" operator="Virgin Mobile" denominationType="Fixed"/>
-                    <carrier carrierId="22" carrierName="Locus Platinum" category="Pin" countryCode="US" currencyCode="USD" productId="22" operator="Locus Platinum" denominationType="Variable"/>
-                    <carrier carrierId="25" carrierName="Platinum Tel" category="Pin" countryCode="US" currencyCode="USD" productId="25" operator="Platinum Tel" denominationType="Variable"/>
-                    <carrier carrierId="26" carrierName="Net 10" category="Pin" countryCode="US" currencyCode="USD" productId="26" operator="Net 10" denominationType="Variable"/>
-                    <carrier carrierId="27" carrierName="Tuyo" category="Pin" countryCode="US" currencyCode="USD" productId="27" operator="Tuyo" denominationType="Variable"/>
-                    <carrier carrierId="30" carrierName="Xtreme" category="Pin" countryCode="US" currencyCode="USD" productId="30" operator="Xtreme" denominationType="Variable"/>
-                    <carrier carrierId="35" carrierName="Movida" category="Pin" countryCode="US" currencyCode="USD" productId="35" operator="Movida" denominationType="Variable"/>
-                    <carrier carrierId="38" carrierName="Boost $10 - 99" category="Rtr" countryCode="US" currencyCode="USD" productId="38" operator="Boost $20 - 99" denominationType="Variable"/>
-                    <carrier carrierId="42" carrierName="Total Call" category="Pin" countryCode="US" currencyCode="USD" productId="42" operator="Total Call" denominationType="Variable"/>
-                    <carrier carrierId="43" carrierName="Ready Mobile" category="Pin" countryCode="US" currencyCode="USD" productId="43" operator="Ready Mobile" denominationType="Variable"/>
-                    <carrier carrierId="44" carrierName="TelCel" category="Rtr" countryCode="MX" currencyCode="MXN" productId="44" operator="TelCel" denominationType="Fixed"/>
-                    <carrier carrierId="45" carrierName="Verizon Topup" category="Rtr" countryCode="US" currencyCode="USD" productId="45" operator="Verizon Topup" denominationType="Fixed"/>
-                    <carrier carrierId="48" carrierName="Cricket Paygo" category="Pin" countryCode="US" currencyCode="USD" productId="48" operator="Cricket Paygo" denominationType="Fixed"/>
-                    <carrier carrierId="49" carrierName="Express Airvoice" category="Pin" countryCode="US" currencyCode="USD" productId="49" operator="Express Airvoice" denominationType="Fixed"/>
-                    <carrier carrierId="50" carrierName="Alltel" category="Pin" countryCode="US" currencyCode="USD" productId="50" operator="Alltel" denominationType="Fixed"/>
-                    <carrier carrierId="51" carrierName="TM Top Up" category="Rtr" countryCode="US" currencyCode="USD" productId="51" operator="TM Top Up" denominationType="Fixed"/>
-                    <carrier carrierId="52" carrierName="TC Unlimited" category="Pin" countryCode="US" currencyCode="USD" productId="52" operator="TC Unlimited" denominationType="Fixed"/>
-                    <carrier carrierId="53" carrierName="Airvoice Unlimited" category="Pin" countryCode="US" currencyCode="USD" productId="53" operator="Airvoice Unlimited" denominationType="Fixed"/>
-                    <carrier carrierId="54" carrierName="Powerlink Unlimited" category="Pin" countryCode="US" currencyCode="USD" productId="54" operator="Powerlink Unlimited" denominationType="Variable"/>
-                    <carrier carrierId="56" carrierName="Digicel HAITI" category="Rtr" countryCode="HT" currencyCode="HTG" productId="56" operator="Digicel" denominationType="Variable"/>
-                    <carrier carrierId="57" carrierName="Digicel JAMAICA" category="Rtr" countryCode="JM" currencyCode="JMD" productId="57" operator="Digicel" denominationType="Variable"/>
-                    <carrier carrierId="58" carrierName="Digicel HONDURAS" category="Rtr" countryCode="HN" currencyCode="HNL" productId="58" operator="Digicel" denominationType="Variable"/>
-                    <carrier carrierId="59" carrierName="Digicel GUYANA" category="Rtr" countryCode="GY" currencyCode="GYD" productId="59" operator="Digicel" denominationType="Variable"/>
-                    <carrier carrierId="60" carrierName="Haiti - Voila" category="Rtr" countryCode="HT" currencyCode="HTG" productId="60" operator="Voila" denominationType="Variable"/>
-                    <carrier carrierId="61" carrierName="Simple Mobile" category="Pin" countryCode="US" currencyCode="USD" productId="61" operator="Simple Mobile" denominationType="Variable"/>
-                    <carrier carrierId="62" carrierName="Viva - DR" category="Rtr" countryCode="DO" currencyCode="DOP" productId="62" operator="Viva" denominationType="Variable"/>
-                    <carrier carrierId="63" carrierName="Viva - Bolivia" category="Rtr" countryCode="BO" currencyCode="BOB" productId="63" operator="Viva" denominationType="Variable"/>
-                    <carrier carrierId="64" carrierName="Digicel El Salvador" category="Rtr" countryCode="SV" currencyCode="USD" productId="64" operator="Digicel" denominationType="Variable"/>
-                    <carrier carrierId="65" carrierName="ufone" category="Rtr" countryCode="PK" currencyCode="PKR" productId="65" operator="ufone" denominationType="Variable"/>
-                    <carrier carrierId="66" carrierName="Claro DR" category="Rtr" countryCode="DO" currencyCode="DOP" productId="66" operator="Claro" denominationType="Variable"/>
-                    <carrier carrierId="67" carrierName="Digicel TSTT" category="Rtr" countryCode="TT" currencyCode="TTD" productId="67" operator="Digicel" denominationType="Variable"/>
-                    <carrier carrierId="68" carrierName="Movistar Mexico" category="Rtr" countryCode="MX" currencyCode="MXN" productId="68" operator="Movistar" denominationType="Variable"/>
-                    <carrier carrierId="69" carrierName="Movistar Colombia" category="Rtr" countryCode="CO" currencyCode="COP" productId="69" operator="Movistar" denominationType="Variable"/>
-                    <carrier carrierId="70" carrierName="Movistar Ecuador" category="Rtr" countryCode="EC" currencyCode="USD" productId="70" operator="Movistar" denominationType="Variable"/>
-                    <carrier carrierId="71" carrierName="Movistar Panama" category="Rtr" countryCode="PA" currencyCode="PAB" productId="71" operator="Movistar" denominationType="Variable"/>
-                    <carrier carrierId="72" carrierName="Movistar El Salvador" category="Rtr" countryCode="SV" currencyCode="USD" productId="72" operator="Movistar" denominationType="Variable"/>
-                    <carrier carrierId="73" carrierName="Movistar Guatemala" category="Rtr" countryCode="GT" currencyCode="GTQ" productId="73" operator="Movistar" denominationType="Variable"/>
-                    <carrier carrierId="74" carrierName="Movistar Nicaragua" category="Rtr" countryCode="NI" currencyCode="NIO" productId="74" operator="Movistar" denominationType="Variable"/>
-                    <carrier carrierId="76" carrierName="Lime Anguilla" category="Rtr" countryCode="AI" currencyCode="XCD" productId="76" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="77" carrierName="Lime Antigua" category="Rtr" countryCode="AG" currencyCode="XCD" productId="77" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="78" carrierName="Lime Barbados" category="Rtr" countryCode="BB" currencyCode="BBD" productId="78" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="79" carrierName="Lime Virgin Island" category="Rtr" countryCode="VG" currencyCode="USD" productId="79" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="80" carrierName="Lime Cayman Islands" category="Rtr" countryCode="KY" currencyCode="KYD" productId="80" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="81" carrierName="Lime Dominica" category="Rtr" countryCode="DM" currencyCode="XCD" productId="81" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="82" carrierName="Lime Grenada" category="Rtr" countryCode="GD" currencyCode="XCD" productId="82" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="83" carrierName="Lime Jamaica" category="Rtr" countryCode="JM" currencyCode="JMD" productId="83" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="84" carrierName="Lime Montserrat" category="Rtr" countryCode="MS" currencyCode="XCD" productId="84" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="85" carrierName="Lime St. Kitts and Nevis" category="Rtr" countryCode="KN" currencyCode="XCD" productId="85" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="86" carrierName="Lime St. Lucia" category="Rtr" countryCode="LC" currencyCode="XCD" productId="86" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="87" carrierName="Lime St. Vinct &amp; Grndines" category="Rtr" countryCode="VC" currencyCode="XCD" productId="87" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="88" carrierName="Lime Turks &amp; Caicos" category="Rtr" countryCode="TC" currencyCode="USD" productId="88" operator="Lime" denominationType="Variable"/>
-                    <carrier carrierId="89" carrierName="iusacell" category="Rtr" countryCode="MX" currencyCode="MXN" productId="89" operator="Iusacell" denominationType="Variable"/>
-                    <carrier carrierId="90" carrierName="Movistar Peru" category="Rtr" countryCode="PE" currencyCode="PEN" productId="90" operator="Movistar" denominationType="Variable"/>
-                    <carrier carrierId="91" carrierName="Claro Peru" category="Rtr" countryCode="PE" currencyCode="PEN" productId="91" operator="Claro" denominationType="Variable"/>
-                    <carrier carrierId="92" carrierName="Claro El Salvador" category="Rtr" countryCode="SV" currencyCode="USD" productId="92" operator="Claro" denominationType="Variable"/>
-                    <carrier carrierId="93" carrierName="Claro Honduras" category="Rtr" countryCode="HN" currencyCode="HNL" productId="93" operator="Claro" denominationType="Variable"/>
-                    <carrier carrierId="94" carrierName="Claro Guatelama" category="Rtr" countryCode="GT" currencyCode="GTQ" productId="94" operator="Claro" denominationType="Variable"/>
-                    <carrier carrierId="95" carrierName="Claro Jamaica" category="Rtr" countryCode="JM" currencyCode="JMD" productId="95" operator="Claro" denominationType="Variable"/>
-                    <carrier carrierId="96" carrierName="Claro Nicaragua" category="Rtr" countryCode="NI" currencyCode="NIO" productId="96" operator="Claro" denominationType="Variable"/>
-                    <carrier carrierId="102" carrierName="Tigo RTR Honduras" category="Rtr" countryCode="HN" currencyCode="HNL" productId="102" operator="Tigo" denominationType="Fixed"/>
-                    <carrier carrierId="103" carrierName="Tigo RTR Colombia" category="Rtr" countryCode="CO" currencyCode="COP" productId="103" operator="Tigo" denominationType="Variable"/>
-                    <carrier carrierId="104" carrierName="Tigo RTR El Salvador" category="Rtr" countryCode="SV" currencyCode="USD" productId="104" operator="Tigo" denominationType="Variable"/>
-                    <carrier carrierId="105" carrierName="Globe" category="Rtr" countryCode="PH" currencyCode="PHP" productId="105" operator="Globe" denominationType="Fixed"/>
-                    <carrier carrierId="106" carrierName="SURIANA" category="Rtr" countryCode="GM" currencyCode="GMD" productId="106" operator="QCell" denominationType="Variable"/>
-                    <carrier carrierId="107" carrierName="Telenor Pakistan" category="Rtr" countryCode="PK" currencyCode="PKR" productId="107" operator="Telenor" denominationType="Variable"/>
-                    <carrier carrierId="109" carrierName="Tigo RTR Guatemala" category="Rtr" countryCode="GT" currencyCode="GTQ" productId="109" operator="Tigo" denominationType="Fixed"/>
-                    <carrier carrierId="110" carrierName="Idea India" category="Rtr" countryCode="IN" currencyCode="INR" productId="110" operator="Idea" denominationType="Variable"/>
-                    <carrier carrierId="111" carrierName="Reliance India" category="Rtr" countryCode="IN" currencyCode="INR" productId="111" operator="Reliance" denominationType="Variable"/>
-                    <carrier carrierId="112" carrierName="Tata Indicom" category="Rtr" countryCode="IN" currencyCode="INR" productId="112" operator="Tata" denominationType="Variable"/>
-                    <carrier carrierId="113" carrierName="Vodafone India" category="Rtr" countryCode="IN" currencyCode="INR" productId="113" operator="Vodafone" denominationType="Variable"/>
-                    <carrier carrierId="115" carrierName="Zain Nigeria" category="Rtr" countryCode="NG" currencyCode="NGN" productId="115" operator="Glo Nigeria" denominationType="Variable"/>
-                    <carrier carrierId="116" carrierName="Mobilink Pak" category="Rtr" countryCode="PK" currencyCode="PKR" productId="116" operator="Mobilink" denominationType="Fixed"/>
-                    <carrier carrierId="117" carrierName="Viettel Vietnam" category="Rtr" countryCode="VN" currencyCode="VND" productId="117" operator="Viettel Mobile" denominationType="Fixed"/>
-                    <carrier carrierId="118" carrierName="VinaPhone Vietnam" category="Rtr" countryCode="VN" currencyCode="VND" productId="118" operator="Vina Phone" denominationType="Fixed"/>
-                    <carrier carrierId="119" carrierName="Mobifone Vietnam" category="Rtr" countryCode="VN" currencyCode="VND" productId="119" operator="Mobifone" denominationType="Fixed"/>
-                    <carrier carrierId="120" carrierName="S-Fone Vietnam" category="Rtr" countryCode="VN" currencyCode="VND" productId="120" operator="S-Fone" denominationType="Fixed"/>
-                    <carrier carrierId="121" carrierName="EVN Telecom Vietnam" category="Rtr" countryCode="VN" currencyCode="VND" productId="121" operator="EVN Telecom" denominationType="Fixed"/>
-                    <carrier carrierId="122" carrierName="Unefone" category="Rtr" countryCode="MX" currencyCode="MXN" productId="122" operator="Iusacell" denominationType="Variable"/>
-                    <carrier carrierId="124" carrierName="BSNL" category="Rtr" countryCode="IN" currencyCode="INR" productId="124" operator="BSNL" denominationType="Variable"/>
-                    <carrier carrierId="125" carrierName="Aircel India" category="Rtr" countryCode="IN" currencyCode="INR" productId="125" operator="Aircel" denominationType="Variable"/>
-                    <carrier carrierId="126" carrierName="MTS India" category="Rtr" countryCode="IN" currencyCode="INR" productId="126" operator="MTS" denominationType="Variable"/>
-                    <carrier carrierId="127" carrierName="Loop India" category="Rtr" countryCode="IN" currencyCode="INR" productId="127" operator="Loop" denominationType="Variable"/>
-                    <carrier carrierId="128" carrierName="Tata Docomo" category="Rtr" countryCode="IN" currencyCode="INR" productId="128" operator="Tata" denominationType="Fixed"/>
-                    <carrier carrierId="132" carrierName="Sun Cellular" category="Rtr" countryCode="PH" currencyCode="PHP" productId="132" operator="Sun Cellular" denominationType="Fixed"/>
-                    <carrier carrierId="134" carrierName="Orange Cameroon" category="Rtr" countryCode="CM" currencyCode="AFN" productId="134" operator="Orange" denominationType="Fixed"/>
-                    <carrier carrierId="135" carrierName="Orange Guinea" category="Rtr" countryCode="GN" currencyCode="GNF" productId="135" operator="Orange" denominationType="Fixed"/>
-                    <carrier carrierId="136" carrierName="Orange Ivory Coast" category="Rtr" countryCode="CI" currencyCode="XAF" productId="136" operator="Orange" denominationType="Fixed"/>
-                    <carrier carrierId="137" carrierName="Orange Madagascar" category="Rtr" countryCode="MG" currencyCode="MGF" productId="137" operator="Orange" denominationType="Fixed"/>
-                    <carrier carrierId="138" carrierName="Orange Mali" category="Rtr" countryCode="ML" currencyCode="AFN" productId="138" operator="Orange" denominationType="Fixed"/>
-                    <carrier carrierId="139" carrierName="Orange Niger" category="Rtr" countryCode="NE" currencyCode="XOF" productId="139" operator="Orange" denominationType="Fixed"/>
-                    <carrier carrierId="140" carrierName="Orange Tunisia" category="Rtr" countryCode="TN" currencyCode="TND" productId="140" operator="Orange" denominationType="Fixed"/>
-                    <carrier carrierId="141" carrierName="ATT - Topup" category="Rtr" countryCode="US" currencyCode="USD" productId="141" operator="ATT" denominationType="Variable"/>
-                    <carrier carrierId="142" carrierName="Digicel Suriname" category="Rtr" countryCode="SR" currencyCode="SRD" productId="142" operator="Digicel" denominationType="Variable"/>
-                    <carrier carrierId="143" carrierName="America Movil - Peru" category="Rtr" countryCode="PE" currencyCode="PEN" productId="143" operator="America Movil" denominationType="Variable"/>
-                    <carrier carrierId="144" carrierName="Bmobile TSTT" category="Rtr" countryCode="TT" currencyCode="TTD" productId="144" operator="Bmobile " denominationType="Variable"/>
-                    <carrier carrierId="145" carrierName="CADCOMMS Combodia" category="Rtr" countryCode="US" currencyCode="USD" productId="145" operator="QB" denominationType="Variable"/>
-                    <carrier carrierId="163" carrierName="Red Pocket Mobile" category="Pin" countryCode="US" currencyCode="USD" productId="163" operator="Red Pocket" denominationType="Fixed"/>
-                    <carrier carrierId="164" carrierName="Zapp" category="Pin" countryCode="US" currencyCode="USD" productId="164" operator="Zapp" denominationType="Fixed"/>
-                    <carrier carrierId="167" carrierName="Telcel II" category="Rtr" countryCode="MX" currencyCode="MXN" productId="167" operator="TelCel" denominationType="Fixed"/>
-                    <carrier carrierId="170" carrierName="Glo Nigeria" category="Rtr" countryCode="NG" currencyCode="NGN" productId="170" operator="Glo Nigeria" denominationType="Variable"/>
-                    <carrier carrierId="172" carrierName="Simple Mobile RTR" category="Rtr" countryCode="US" currencyCode="USD" productId="172" operator="Simple Mobile" denominationType="Fixed"/>
-                    <carrier carrierId="178" carrierName="Cellcom Guinea" category="Rtr" countryCode="GN" currencyCode="GNF" productId="178" operator="Cellcom" denominationType="Variable"/>
-                    <carrier carrierId="180" carrierName="Movistar Mexico MX" category="Rtr" countryCode="MX" currencyCode="MXN" productId="180" operator="Movistar" denominationType="Fixed"/>
-                    <carrier carrierId="181" carrierName="Tigo Ghana Open Range" category="Rtr" countryCode="GH" currencyCode="GHS" productId="181" operator="Tigo" denominationType="Variable"/>
-                    <carrier carrierId="182" carrierName="Natcom Haiti" category="Rtr" countryCode="HT" currencyCode="HTG" productId="182" operator="Ace" denominationType="Variable"/>
-                    <carrier carrierId="183" carrierName="Airtel Ghana" category="Rtr" countryCode="GH" currencyCode="GHS" productId="183" operator="Airtel Ghana" denominationType="Fixed"/>
-                    <carrier carrierId="184" carrierName="MTN Ghana" category="Rtr" countryCode="GH" currencyCode="GHS" productId="184" operator="MTN Ghana" denominationType="Fixed"/>
-                    <carrier carrierId="185" carrierName="Expresso Ghana" category="Rtr" countryCode="GH" currencyCode="GHS" productId="185" operator="Expresso Ghana" denominationType="Fixed"/>
-                    <carrier carrierId="186" carrierName="MTN Nigeria " category="Rtr" countryCode="NG" currencyCode="NGN" productId="186" operator="MTN Nigeria " denominationType="Fixed"/>
-                    <carrier carrierId="187" carrierName="Etisalat Nigeria " category="Rtr" countryCode="NG" currencyCode="NGN" productId="187" operator="Etisalat Nigeria " denominationType="Fixed"/>
-                    <carrier carrierId="1176" carrierName="Etisalat Egypt" category="Rtr" countryCode="EG" currencyCode="USD" productId="1176" operator="Etisalat Egypt" denominationType="Fixed"/>
-                    <carrier carrierId="1177" carrierName="Vox Paraguay" category="Rtr" countryCode="01" currencyCode="PYG" productId="1177" operator="Vox" denominationType="Variable"/>
-                    <carrier carrierId="1178" carrierName="Comcel Colombia" category="Rtr" countryCode="CO" currencyCode="COP" productId="1178" operator="Claro" denominationType="Variable"/>
-                    <carrier carrierId="1181" carrierName="Talk Talk Now" category="Rtr" countryCode="US" currencyCode="USD" productId="1181" operator="Real Mobile" denominationType="Variable"/>
-                    <carrier carrierId="1183" carrierName="Unitel ILD" category="Rtr" countryCode="US" currencyCode="USD" productId="1183" operator="Etisalat " denominationType="Variable"/>
-                    <carrier carrierId="1184" carrierName="Juicy Patties" category="Pin" countryCode="US" currencyCode="USD" productId="1184" operator="Cricket Paygo" denominationType="Fixed"/>
-                    <carrier carrierId="1185" carrierName="Lyca Mobile" category="Rtr" countryCode="US" currencyCode="USD" productId="1185" operator="Lyca Mobile" denominationType="Variable"/>
-                    <carrier carrierId="1188" carrierName="Spot Mobile" category="Pin" countryCode="US" currencyCode="USD" productId="1188" operator="8ta" denominationType="Fixed"/>
-                    <carrier carrierId="1192" carrierName="Togocel" category="Rtr" countryCode="TG" currencyCode="XOF" productId="1192" operator="8ta" denominationType="Fixed"/>
-                    <carrier carrierId="1193" carrierName="Lyca Mobile Pin - PLAN ADD ON $10" category="Pin" countryCode="US" currencyCode="USD" productId="1193" operator="Lyca Mobile" denominationType="Fixed"/>
-                    <carrier carrierId="1194" carrierName="Selectel" category="Rtr" countryCode="US" currencyCode="USD" productId="1194" operator="Selectel" denominationType="Fixed"/>
-                    <carrier carrierId="23" carrierName="Oxygen" category="Pin" countryCode="US" currencyCode="USD" productId="23" operator="Oxygen" denominationType="Variable"/>
-                    <carrier carrierId="46" carrierName="Tigo Honduras" category="Pin" countryCode="US" currencyCode="USD" productId="46" operator="Tigo" denominationType="Variable"/>
-                    <carrier carrierId="55" carrierName="H20 Unlimited" category="Pin" countryCode="US" currencyCode="USD" productId="55" operator="H20 Unlimited" denominationType="Fixed"/>
-                    <carrier carrierId="75" carrierName="Tigo El Salvador" category="Pin" countryCode="US" currencyCode="USD" productId="75" operator="Tigo" denominationType="Fixed"/>
+                    <carrier carrierId="8" carrierName="AT&amp;T PIN US " category="Pin" countryCode="US" productId="8" operator="AT&amp;T" denominationType="Fixed"/>
+                    <carrier carrierId="11" carrierName="T-Mobile PIN US " category="Pin" countryCode="US" productId="11" operator="T-Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="12" carrierName="Verizon PIN US " category="Pin" countryCode="US" productId="12" operator="Verizon" denominationType="Fixed"/>
+                    <carrier carrierId="13" carrierName="Airvoice PIN US" category="Pin" countryCode="US" productId="13" operator="Airvoice" denominationType="Fixed"/>
+                    <carrier carrierId="16" carrierName="Tracfone PIN- Refill Only" category="Pin" countryCode="US" productId="16" operator="Tracfone" denominationType="Fixed"/>
+                    <carrier carrierId="17" carrierName="STI PIN US " category="Pin" countryCode="US" productId="17" operator="STI" denominationType="Fixed"/>
+                    <carrier carrierId="19" carrierName="Page Plus PIN US - Refill Only" category="Pin" countryCode="US" productId="19" operator="Page Plus" denominationType="Fixed"/>
+                    <carrier carrierId="26" carrierName="Net 10 PIN US -  Refill Only" category="Pin" countryCode="US" productId="26" operator="Net 10" denominationType="Fixed"/>
+                    <carrier carrierId="35" carrierName="Movida PIN US " category="Pin" countryCode="US" productId="35" operator="Movida" denominationType="Fixed"/>
+                    <carrier carrierId="43" carrierName="Ready Mobile PIN US " category="Pin" countryCode="US" productId="43" operator="Ready Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="44" carrierName="Telcel Mexico USD" category="Rtr" countryCode="MX" productId="44" operator="Telcel" denominationType="Fixed"/>
+                    <carrier carrierId="46" carrierName="Tigo Honduras Pin" category="Pin" countryCode="US" productId="46" operator="Tigo" denominationType="Fixed"/>
+                    <carrier carrierId="47" carrierName="Tigo Guatemala Pin" category="Pin" countryCode="US" productId="47" operator="Tigo" denominationType="Fixed"/>
+                    <carrier carrierId="54" carrierName="Powerlink Unlimited PIN US " category="Pin" countryCode="US" productId="54" operator="Powerlink Unlimited" denominationType="Fixed"/>
+                    <carrier carrierId="55" carrierName="H2O PIN US" category="Pin" countryCode="US" productId="55" operator="H2O" denominationType="Fixed"/>
+                    <carrier carrierId="56" carrierName="Digicel Haiti" category="Rtr" countryCode="HT" productId="56" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="57" carrierName="Digicel Jamaica" category="Rtr" countryCode="JM" productId="57" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="58" carrierName="Digicel Honduras" category="Rtr" countryCode="HN" productId="58" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="59" carrierName="Digicel Guyana" category="Rtr" countryCode="GY" productId="59" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="60" carrierName="Haiti Voila " category="Rtr" countryCode="HT" productId="60" operator="Voila" denominationType="Variable"/>
+                    <carrier carrierId="61" carrierName="Simple Mobile PIN-Refill Only" category="Pin" countryCode="US" productId="61" operator="Simple Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="62" carrierName="Viva DR " category="Rtr" countryCode="DO" productId="62" operator="Viva" denominationType="Variable"/>
+                    <carrier carrierId="64" carrierName="Digicel El Salvador" category="Rtr" countryCode="SV" productId="64" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="65" carrierName="Ufone Pakistan " category="Rtr" countryCode="PK" productId="65" operator="Ufone" denominationType="Variable"/>
+                    <carrier carrierId="66" carrierName="Claro DR" category="Rtr" countryCode="DO" productId="66" operator="Claro" denominationType="Variable"/>
+                    <carrier carrierId="67" carrierName="Digicel Trinadad &amp; Tobago " category="Rtr" countryCode="TT" productId="67" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="68" carrierName="Movistar Mexico" category="Rtr" countryCode="MX" productId="68" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="69" carrierName="Movistar Colombia" category="Rtr" countryCode="CO" productId="69" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="70" carrierName="Movistar Ecuador" category="Rtr" countryCode="EC" productId="70" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="71" carrierName="Movistar Panama" category="Rtr" countryCode="PA" productId="71" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="72" carrierName="Movistar El Salvador" category="Rtr" countryCode="SV" productId="72" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="73" carrierName="Movistar Guatemala" category="Rtr" countryCode="GT" productId="73" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="74" carrierName="Movistar Nicaragua" category="Rtr" countryCode="NI" productId="74" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="75" carrierName="Tigo El Salvador Pin" category="Pin" countryCode="US" productId="75" operator="Tigo" denominationType="Fixed"/>
+                    <carrier carrierId="76" carrierName="Lime Anguilla" category="Rtr" countryCode="AI" productId="76" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="77" carrierName="Lime Antigua" category="Rtr" countryCode="AG" productId="77" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="78" carrierName="Lime Barbados" category="Rtr" countryCode="BB" productId="78" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="79" carrierName="Lime Virgin Island" category="Rtr" countryCode="VG" productId="79" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="80" carrierName="Lime Cayman Islands" category="Rtr" countryCode="KY" productId="80" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="81" carrierName="Lime Dominica" category="Rtr" countryCode="DM" productId="81" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="82" carrierName="Lime Grenada" category="Rtr" countryCode="GD" productId="82" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="83" carrierName="Lime Jamaica" category="Rtr" countryCode="JM" productId="83" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="84" carrierName="Lime Montserrat" category="Rtr" countryCode="MS" productId="84" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="85" carrierName="Lime Kitts &amp; Nevis " category="Rtr" countryCode="KN" productId="85" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="86" carrierName="Lime St. Lucia" category="Rtr" countryCode="LC" productId="86" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="87" carrierName="Lime Vincent &amp; Grenadines" category="Rtr" countryCode="VC" productId="87" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="88" carrierName="Lime Turks &amp; Caicos" category="Rtr" countryCode="TC" productId="88" operator="Lime" denominationType="Variable"/>
+                    <carrier carrierId="89" carrierName="Iusacell Mexico " category="Rtr" countryCode="MX" productId="89" operator="Iusacell" denominationType="Variable"/>
+                    <carrier carrierId="90" carrierName="Movistar Peru" category="Rtr" countryCode="PE" productId="90" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="91" carrierName="Claro Peru" category="Rtr" countryCode="PE" productId="91" operator="Claro" denominationType="Variable"/>
+                    <carrier carrierId="92" carrierName="Claro El Salvador" category="Rtr" countryCode="SV" productId="92" operator="Claro" denominationType="Variable"/>
+                    <carrier carrierId="93" carrierName="Claro Honduras" category="Rtr" countryCode="HN" productId="93" operator="Claro" denominationType="Variable"/>
+                    <carrier carrierId="94" carrierName="Claro Guatemala" category="Rtr" countryCode="GT" productId="94" operator="Claro" denominationType="Variable"/>
+                    <carrier carrierId="95" carrierName="Claro Jamaica" category="Rtr" countryCode="JM" productId="95" operator="Claro" denominationType="Variable"/>
+                    <carrier carrierId="96" carrierName="Claro Nicaragua" category="Rtr" countryCode="NI" productId="96" operator="Claro" denominationType="Variable"/>
+                    <carrier carrierId="103" carrierName="Tigo Colombia" category="Rtr" countryCode="CO" productId="103" operator="Tigo" denominationType="Fixed"/>
+                    <carrier carrierId="105" carrierName="Globe Philippines " category="Rtr" countryCode="PH" productId="105" operator="Globe" denominationType="Fixed"/>
+                    <carrier carrierId="106" carrierName="Qcell Gambia" category="Rtr" countryCode="GM" productId="106" operator="Qcell" denominationType="Variable"/>
+                    <carrier carrierId="107" carrierName="Telenor Pakistan" category="Rtr" countryCode="PK" productId="107" operator="Telenor" denominationType="Variable"/>
+                    <carrier carrierId="108" carrierName="Orange DR" category="Rtr" countryCode="DO" productId="108" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="109" carrierName="Tigo Guatemala" category="Rtr" countryCode="GT" productId="109" operator="Tigo" denominationType="Fixed"/>
+                    <carrier carrierId="110" carrierName="Idea India" category="Rtr" countryCode="IN" productId="110" operator="Idea" denominationType="Fixed"/>
+                    <carrier carrierId="111" carrierName="Reliance India" category="Rtr" countryCode="IN" productId="111" operator="Reliance" denominationType="Fixed"/>
+                    <carrier carrierId="112" carrierName="Tata Indicom India " category="Rtr" countryCode="IN" productId="112" operator="Tata Indicom" denominationType="Fixed"/>
+                    <carrier carrierId="113" carrierName="Vodafone India" category="Rtr" countryCode="IN" productId="113" operator="Vodafone" denominationType="Fixed"/>
+                    <carrier carrierId="114" carrierName="Airtel Bharti India" category="Rtr" countryCode="IN" productId="114" operator="Airtel" denominationType="Fixed"/>
+                    <carrier carrierId="115" carrierName="Airtel Nigeria" category="Rtr" countryCode="NG" productId="115" operator="Airtel" denominationType="Variable"/>
+                    <carrier carrierId="117" carrierName="Viettel Vietnam" category="Rtr" countryCode="VN" productId="117" operator="Viettel Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="118" carrierName="VinaPhone Vietnam" category="Rtr" countryCode="VN" productId="118" operator="Vina Phone" denominationType="Fixed"/>
+                    <carrier carrierId="119" carrierName="Mobifone Vietnam" category="Rtr" countryCode="VN" productId="119" operator="Mobifone" denominationType="Fixed"/>
+                    <carrier carrierId="121" carrierName="EVN Telecom Vietnam" category="Rtr" countryCode="VN" productId="121" operator="EVN Telecom" denominationType="Fixed"/>
+                    <carrier carrierId="122" carrierName="Unefon Mexico " category="Rtr" countryCode="MX" productId="122" operator="Unefon" denominationType="Variable"/>
+                    <carrier carrierId="124" carrierName="BSNL India" category="Rtr" countryCode="IN" productId="124" operator="BSNL " denominationType="Fixed"/>
+                    <carrier carrierId="125" carrierName="Aircel India" category="Rtr" countryCode="IN" productId="125" operator="Aircel" denominationType="Fixed"/>
+                    <carrier carrierId="126" carrierName="MTS India" category="Rtr" countryCode="IN" productId="126" operator="MTS" denominationType="Fixed"/>
+                    <carrier carrierId="128" carrierName="Tata Docomo India " category="Rtr" countryCode="IN" productId="128" operator="Tata Docomo" denominationType="Fixed"/>
+                    <carrier carrierId="129" carrierName="Uninor India" category="Rtr" countryCode="IN" productId="129" operator="Uninor" denominationType="Fixed"/>
+                    <carrier carrierId="131" carrierName="T-Mobile US  Open Range" category="Rtr" countryCode="US" productId="131" operator="T-Mobile" denominationType="Variable"/>
+                    <carrier carrierId="132" carrierName="Sun Cellular Philippines " category="Rtr" countryCode="PH" productId="132" operator="Sun" denominationType="Fixed"/>
+                    <carrier carrierId="133" carrierName="Smart Philippines " category="Rtr" countryCode="PH" productId="133" operator="Smart" denominationType="Fixed"/>
+                    <carrier carrierId="134" carrierName="Orange Cameroon" category="Rtr" countryCode="CM" productId="134" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="135" carrierName="Orange Guinea" category="Rtr" countryCode="GN" productId="135" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="136" carrierName="Orange Ivory Coast" category="Rtr" countryCode="CI" productId="136" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="137" carrierName="Orange Madagascar" category="Rtr" countryCode="MG" productId="137" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="138" carrierName="Orange Mali" category="Rtr" countryCode="ML" productId="138" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="139" carrierName="Orange Niger" category="Rtr" countryCode="NE" productId="139" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="140" carrierName="Orange Tunisia" category="Rtr" countryCode="TN" productId="140" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="141" carrierName="AT&amp;T RTR $15-$100" category="Rtr" countryCode="US" productId="141" operator="AT&amp;T" denominationType="Variable"/>
+                    <carrier carrierId="142" carrierName="Digicel Suriname" category="Rtr" countryCode="SR" productId="142" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="144" carrierName="Bmobile Trinidad &amp; Tobago " category="Rtr" countryCode="TT" productId="144" operator="Bmobile " denominationType="Variable"/>
+                    <carrier carrierId="145" carrierName="CADCOMMS Cambodia " category="Rtr" countryCode="KH" productId="145" operator="qbMore" denominationType="Variable"/>
+                    <carrier carrierId="146" carrierName="Cable and Wireless Panama" category="Rtr" countryCode="PA" productId="146" operator="Cable &amp; Wireless" denominationType="Variable"/>
+                    <carrier carrierId="147" carrierName="Celcom Malaysia" category="Rtr" countryCode="MY" productId="147" operator="Cellcom" denominationType="Fixed"/>
+                    <carrier carrierId="148" carrierName="Comcel Columbia" category="Rtr" countryCode="CO" productId="148" operator="Comcel" denominationType="Variable"/>
+                    <carrier carrierId="149" carrierName="DiGi Malaysia" category="Rtr" countryCode="MY" productId="149" operator="DiGi" denominationType="Fixed"/>
+                    <carrier carrierId="153" carrierName="Zong Pakistan" category="Rtr" countryCode="PK" productId="153" operator="Zong" denominationType="Fixed"/>
+                    <carrier carrierId="155" carrierName="Entel Bolivia" category="Rtr" countryCode="BO" productId="155" operator="Entel" denominationType="Variable"/>
+                    <carrier carrierId="156" carrierName="Claro Ecuador" category="Rtr" countryCode="EC" productId="156" operator="Claro" denominationType="Fixed"/>
+                    <carrier carrierId="157" carrierName="Claro Puerto Rico" category="Rtr" countryCode="PR" productId="157" operator="Claro" denominationType="Fixed"/>
+                    <carrier carrierId="162" carrierName="Etisalat Afghanistan" category="Rtr" countryCode="AF" productId="162" operator="Etisalat" denominationType="Variable"/>
+                    <carrier carrierId="166" carrierName="Roshan Afghanistan" category="Rtr" countryCode="AF" productId="166" operator="Roshan" denominationType="Variable"/>
+                    <carrier carrierId="167" carrierName="Telcel II Mexico " category="Rtr" countryCode="MX" productId="167" operator="Telcel" denominationType="Fixed"/>
+                    <carrier carrierId="168" carrierName="MTNL India" category="Rtr" countryCode="IN" productId="168" operator="MTNL" denominationType="Fixed"/>
+                    <carrier carrierId="170" carrierName="Glo Nigeria" category="Rtr" countryCode="NG" productId="170" operator="Glo" denominationType="Variable"/>
+                    <carrier carrierId="171" carrierName="Verizon Variable US" category="Rtr" countryCode="US" productId="171" operator="Verizon" denominationType="Variable"/>
+                    <carrier carrierId="172" carrierName="Simple Mobile RTR" category="Rtr" countryCode="US" productId="172" operator="Simple Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="173" carrierName="Telcel Mexico MXN" category="Rtr" countryCode="MX" productId="173" operator="Telcel" denominationType="Fixed"/>
+                    <carrier carrierId="177" carrierName="Cubacel - I" category="Rtr" countryCode="CU" productId="177" operator="Cubacel" denominationType="Fixed"/>
+                    <carrier carrierId="178" carrierName="Cellcom Guinea" category="Rtr" countryCode="GN" productId="178" operator="Cellcom" denominationType="Variable"/>
+                    <carrier carrierId="179" carrierName="Tigo Honduras Variable" category="Rtr" countryCode="HN" productId="179" operator="Tigo" denominationType="Variable"/>
+                    <carrier carrierId="180" carrierName="Movistar Mexico MX" category="Rtr" countryCode="MX" productId="180" operator="Movistar" denominationType="Fixed"/>
+                    <carrier carrierId="181" carrierName="Tigo Ghana Variable" category="Rtr" countryCode="GH" productId="181" operator="Tigo" denominationType="Variable"/>
+                    <carrier carrierId="182" carrierName="Natcom Haiti" category="Rtr" countryCode="HT" productId="182" operator="Natcom" denominationType="Variable"/>
+                    <carrier carrierId="183" carrierName="Airtel Ghana" category="Rtr" countryCode="GH" productId="183" operator="Airtel" denominationType="Fixed"/>
+                    <carrier carrierId="184" carrierName="MTN Ghana" category="Rtr" countryCode="GH" productId="184" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="185" carrierName="Expresso Ghana" category="Rtr" countryCode="GH" productId="185" operator="Expresso" denominationType="Fixed"/>
+                    <carrier carrierId="186" carrierName="MTN Nigeria " category="Rtr" countryCode="NG" productId="186" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="187" carrierName="Etisalat Nigeria" category="Rtr" countryCode="NG" productId="187" operator="Etisalat" denominationType="Fixed"/>
+                    <carrier carrierId="188" carrierName="Etisalat Egypt " category="Rtr" countryCode="EG" productId="188" operator="Etisalat" denominationType="Fixed"/>
+                    <carrier carrierId="189" carrierName="Mobinil Egypt " category="Rtr" countryCode="EG" productId="189" operator="Mobinil" denominationType="Fixed"/>
+                    <carrier carrierId="190" carrierName="Vodafone Egypt " category="Rtr" countryCode="EG" productId="190" operator="Vodafone" denominationType="Fixed"/>
+                    <carrier carrierId="192" carrierName="MTN Ivory Coast" category="Rtr" countryCode="CI" productId="192" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="193" carrierName="Digicel Grenada" category="Rtr" countryCode="GD" productId="193" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="194" carrierName="Digicel Antigua" category="Rtr" countryCode="AG" productId="194" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="195" carrierName="Digicel St. Kitts" category="Rtr" countryCode="KN" productId="195" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="196" carrierName="Digicel Dominica" category="Rtr" countryCode="DM" productId="196" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="197" carrierName="Digicel Barbados" category="Rtr" countryCode="BB" productId="197" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="198" carrierName="Digicel Turks &amp; Caicos" category="Rtr" countryCode="TC" productId="198" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="199" carrierName="Digicel St. Vincent" category="Rtr" countryCode="VC" productId="199" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="200" carrierName="Digicel St. Lucia" category="Rtr" countryCode="LC" productId="200" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="201" carrierName="Cubacel - II" category="Rtr" countryCode="CU" productId="201" operator="Cubacel" denominationType="Fixed"/>
+                    <carrier carrierId="202" carrierName="Digicel Aruba" category="Rtr" countryCode="AW" productId="202" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="203" carrierName="Digicel Bonaire" category="Rtr" countryCode="AN" productId="203" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="204" carrierName="Digicel Curacao" category="Rtr" countryCode="CW" productId="204" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="206" carrierName="Orange Senegal" category="Rtr" countryCode="SN" productId="206" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="208" carrierName="Good2go PIN Mobile" category="Pin" countryCode="US" productId="208" operator="Good2GO" denominationType="Fixed"/>
+                    <carrier carrierId="220" carrierName="Telcel America PIN-Refill Only" category="Pin" countryCode="US" productId="220" operator="Telcel America" denominationType="Fixed"/>
+                    <carrier carrierId="222" carrierName="Jawwal Palestine" category="Rtr" countryCode="PS" productId="222" operator="Jawwal" denominationType="Variable"/>
+                    <carrier carrierId="228" carrierName="Tigo El Salvador Variable" category="Rtr" countryCode="SV" productId="228" operator="Tigo" denominationType="Variable"/>
+                    <carrier carrierId="230" carrierName="Ultra Mobile" category="Rtr" countryCode="US" productId="230" operator="Ultra Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="242" carrierName="Vodafone Spain" category="Rtr" countryCode="ES" productId="242" operator="Vodafone" denominationType="Fixed"/>
+                    <carrier carrierId="243" carrierName="Yoigo Spain" category="Rtr" countryCode="ES" productId="243" operator="Yoigo" denominationType="Fixed"/>
+                    <carrier carrierId="244" carrierName="Orange Spain" category="Rtr" countryCode="ES" productId="244" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="245" carrierName="Lebara Spain" category="Rtr" countryCode="ES" productId="245" operator="Lebara" denominationType="Fixed"/>
+                    <carrier carrierId="261" carrierName="Ztest Pin" category="Pin" countryCode="US" productId="261" operator="Test Pin" denominationType="Fixed"/>
+                    <carrier carrierId="262" carrierName="Life Wireless/Pure Prepaid PIN" category="Pin" countryCode="US" productId="262" operator="Pure/Life Wireless" denominationType="Fixed"/>
+                    <carrier carrierId="265" carrierName="Inwi Morocco" category="Rtr" countryCode="MA" productId="265" operator="Inwi" denominationType="Fixed"/>
+                    <carrier carrierId="266" carrierName="Telesur Suriname" category="Rtr" countryCode="SR" productId="266" operator="Telesur" denominationType="Variable"/>
+                    <carrier carrierId="268" carrierName="Lycamobile US" category="Rtr" countryCode="US" productId="268" operator="Lyca Mobile" denominationType="Variable"/>
+                    <carrier carrierId="269" carrierName="Cintex PIN Wireless" category="Pin" countryCode="US" productId="269" operator="Cintex" denominationType="Fixed"/>
+                    <carrier carrierId="270" carrierName="Access Wireless PIN" category="Pin" countryCode="US" productId="270" operator="Access" denominationType="Fixed"/>
+                    <carrier carrierId="278" carrierName="Moun DR" category="Rtr" countryCode="DO" productId="278" operator="Moun" denominationType="Variable"/>
+                    <carrier carrierId="280" carrierName="Afghan Wireless" category="Rtr" countryCode="AF" productId="280" operator="AWCC" denominationType="Variable"/>
+                    <carrier carrierId="284" carrierName="Lyca Unlimited National Plans " category="Rtr" countryCode="US" productId="284" operator="Lyca Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="290" carrierName="Uff Mobile Colombia" category="Rtr" countryCode="CO" productId="290" operator="Uff Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="291" carrierName="Alegro Ecuador" category="Rtr" countryCode="EC" productId="291" operator="Alegro" denominationType="Fixed"/>
+                    <carrier carrierId="292" carrierName="Hutchison Three Indonesia" category="Rtr" countryCode="ID" productId="292" operator="Hutchison" denominationType="Fixed"/>
+                    <carrier carrierId="293" carrierName="Videocon India" category="Rtr" countryCode="IN" productId="293" operator="Videocon" denominationType="Fixed"/>
+                    <carrier carrierId="294" carrierName="Llamaya Spain" category="Rtr" countryCode="ES" productId="294" operator="Llamaya" denominationType="Fixed"/>
+                    <carrier carrierId="295" carrierName="Digimobil Spain" category="Rtr" countryCode="ES" productId="295" operator="Digimobil" denominationType="Fixed"/>
+                    <carrier carrierId="296" carrierName="Lycamobile Spain" category="Rtr" countryCode="ES" productId="296" operator="Lyca Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="297" carrierName="Hits Mobile Spain" category="Rtr" countryCode="ES" productId="297" operator="Hits Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="298" carrierName="Masmovil Spain" category="Rtr" countryCode="ES" productId="298" operator="Masmovil" denominationType="Fixed"/>
+                    <carrier carrierId="300" carrierName="Carrefour Spain" category="Rtr" countryCode="ES" productId="300" operator="Carrefour" denominationType="Fixed"/>
+                    <carrier carrierId="301" carrierName="CLM Spain" category="Rtr" countryCode="ES" productId="301" operator="CLM" denominationType="Fixed"/>
+                    <carrier carrierId="302" carrierName="Euskaltel Spain " category="Rtr" countryCode="ES" productId="302" operator="Euskatel" denominationType="Fixed"/>
+                    <carrier carrierId="303" carrierName="Hablafacil Spain" category="Rtr" countryCode="ES" productId="303" operator="Hablafacil" denominationType="Fixed"/>
+                    <carrier carrierId="304" carrierName="Hong Da Mobile Spain" category="Rtr" countryCode="ES" productId="304" operator="Hong Da Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="305" carrierName="Mundimovil Spain" category="Rtr" countryCode="ES" productId="305" operator="Mundimovil" denominationType="Fixed"/>
+                    <carrier carrierId="308" carrierName="Simyo Spain" category="Rtr" countryCode="ES" productId="308" operator="Simyo" denominationType="Fixed"/>
+                    <carrier carrierId="309" carrierName="Talkout Spain" category="Rtr" countryCode="ES" productId="309" operator="Talkout" denominationType="Fixed"/>
+                    <carrier carrierId="310" carrierName="GT Mobile Spain" category="Rtr" countryCode="ES" productId="310" operator="GT Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="313" carrierName="Best Movil Spain" category="Rtr" countryCode="ES" productId="313" operator="Best Movil" denominationType="Fixed"/>
+                    <carrier carrierId="314" carrierName="Happy Movil Spain" category="Rtr" countryCode="ES" productId="314" operator="Happy Movil " denominationType="Fixed"/>
+                    <carrier carrierId="315" carrierName="TIM Brazil" category="Rtr" countryCode="BR" productId="315" operator="TIM" denominationType="Fixed"/>
+                    <carrier carrierId="317" carrierName="OI Brazil" category="Rtr" countryCode="BR" productId="317" operator="Oi" denominationType="Fixed"/>
+                    <carrier carrierId="318" carrierName="Claro Brazil" category="Rtr" countryCode="BR" productId="318" operator="Claro" denominationType="Fixed"/>
+                    <carrier carrierId="319" carrierName="Movistar Argentina" category="Rtr" countryCode="AR" productId="319" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="320" carrierName="Movistar Uruguay" category="Rtr" countryCode="UY" productId="320" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="321" carrierName="Togocel" category="Rtr" countryCode="TG" productId="321" operator="Togocel" denominationType="Fixed"/>
+                    <carrier carrierId="323" carrierName="Telkomsel Kartu AS Indonesia" category="Rtr" countryCode="ID" productId="323" operator="Telkomsel Kartu AS" denominationType="Fixed"/>
+                    <carrier carrierId="335" carrierName="Eco Mobile ILD PIN US" category="Pin" countryCode="US" productId="335" operator="Ecomobile" denominationType="Fixed"/>
+                    <carrier carrierId="342" carrierName="MTN Afghanistan" category="Rtr" countryCode="AF" productId="342" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="343" carrierName="Tigo Bolivia" category="Rtr" countryCode="BO" productId="343" operator="Tigo" denominationType="Fixed"/>
+                    <carrier carrierId="344" carrierName="China Mobile" category="Rtr" countryCode="CN" productId="344" operator="China Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="345" carrierName="China Unicom" category="Rtr" countryCode="CN" productId="345" operator="China Unicom" denominationType="Fixed"/>
+                    <carrier carrierId="346" carrierName="China Telecom" category="Rtr" countryCode="CN" productId="346" operator="China Telecom" denominationType="Fixed"/>
+                    <carrier carrierId="347" carrierName="MTN Republic of Congo" category="Rtr" countryCode="CG" productId="347" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="348" carrierName="MTN Cyprus" category="Rtr" countryCode="CY" productId="348" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="349" carrierName="Umniah Jordan" category="Rtr" countryCode="JO" productId="349" operator="Umniah" denominationType="Fixed"/>
+                    <carrier carrierId="350" carrierName="MTN Liberia" category="Rtr" countryCode="LR" productId="350" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="351" carrierName="Etisalat Sri Lanka" category="Rtr" countryCode="LK" productId="351" operator="Etisalat" denominationType="Variable"/>
+                    <carrier carrierId="353" carrierName="Warid Pakistan" category="Rtr" countryCode="PK" productId="353" operator="Warid" denominationType="Variable"/>
+                    <carrier carrierId="355" carrierName="Telcel Mexico - DD" category="Rtr" countryCode="MX" productId="355" operator="Telcel" denominationType="Fixed"/>
+                    <carrier carrierId="356" carrierName="Kolbi Costa Rica" category="Rtr" countryCode="CR" productId="356" operator="Kolbi" denominationType="Fixed"/>
+                    <carrier carrierId="358" carrierName="Tuyo Movil Costa Rica" category="Rtr" countryCode="CR" productId="358" operator="Tuyo" denominationType="Variable"/>
+                    <carrier carrierId="359" carrierName="Full Movil Costa Rica" category="Rtr" countryCode="CR" productId="359" operator="Full Movil" denominationType="Variable"/>
+                    <carrier carrierId="364" carrierName="Cubacel - III" category="Rtr" countryCode="CU" productId="364" operator="Cubacel" denominationType="Fixed"/>
+                    <carrier carrierId="366" carrierName="Cellcom Liberia" category="Rtr" countryCode="LR" productId="366" operator="Cellcom" denominationType="Variable"/>
+                    <carrier carrierId="367" carrierName="Nextel Mobile MXN" category="Rtr" countryCode="MX" productId="367" operator="Nextel Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="373" carrierName="Orange Poland" category="Rtr" countryCode="PL" productId="373" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="374" carrierName="T-Mobile Poland" category="Rtr" countryCode="PL" productId="374" operator="T-Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="375" carrierName="Polkomtel Plus Poland" category="Rtr" countryCode="PL" productId="375" operator="Polkomtel Plus" denominationType="Fixed"/>
+                    <carrier carrierId="376" carrierName="Play Poland" category="Rtr" countryCode="PL" productId="376" operator="Play" denominationType="Fixed"/>
+                    <carrier carrierId="377" carrierName="Cyfrowy Polsat Poland" category="Rtr" countryCode="PL" productId="377" operator="Cyfrowy Polsat " denominationType="Fixed"/>
+                    <carrier carrierId="380" carrierName="Bayn GSM Morocco" category="Rtr" countryCode="MA" productId="380" operator="Bayn" denominationType="Fixed"/>
+                    <carrier carrierId="382" carrierName="Banglalink Bangla" category="Rtr" countryCode="BD" productId="382" operator="Banglalink" denominationType="Fixed"/>
+                    <carrier carrierId="383" carrierName="Grameenphone Bangla" category="Rtr" countryCode="BD" productId="383" operator="Grameenphone" denominationType="Fixed"/>
+                    <carrier carrierId="388" carrierName="Real Mobile Pin" category="Pin" countryCode="US" productId="388" operator="Real Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="389" carrierName="Claro Colombia" category="Rtr" countryCode="CO" productId="389" operator="Claro" denominationType="Variable"/>
+                    <carrier carrierId="392" carrierName="Mobilink Pakistan RTR" category="Rtr" countryCode="PK" productId="392" operator="Mobilink" denominationType="Variable"/>
+                    <carrier carrierId="396" carrierName="Digicel Fiji" category="Rtr" countryCode="FJ" productId="396" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="397" carrierName="Digicel Vanuatu" category="Rtr" countryCode="VU" productId="397" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="398" carrierName="Digicel Tonga" category="Rtr" countryCode="TO" productId="398" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="399" carrierName="Digicel Samoa" category="Rtr" countryCode="WS" productId="399" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="400" carrierName="Digicel Nauru" category="Rtr" countryCode="NR" productId="400" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="401" carrierName="Digicel PNG" category="Rtr" countryCode="PG" productId="401" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="411" carrierName="Claro Costa Rica" category="Rtr" countryCode="CR" productId="411" operator="Claro" denominationType="Variable"/>
+                    <carrier carrierId="412" carrierName="NTC GSM Nepal" category="Rtr" countryCode="NP" productId="412" operator="NTC Nepal" denominationType="Fixed"/>
+                    <carrier carrierId="413" carrierName="Telcel America RTR" category="Rtr" countryCode="US" productId="413" operator="Telcel America" denominationType="Fixed"/>
+                    <carrier carrierId="414" carrierName="Net10 RTR" category="Rtr" countryCode="US" productId="414" operator="Net 10" denominationType="Fixed"/>
+                    <carrier carrierId="416" carrierName="Lycamobile Unlimited International Plans" category="Rtr" countryCode="US" productId="416" operator="Lyca" denominationType="Fixed"/>
+                    <carrier carrierId="417" carrierName="Lyca International Recharge - Paygo" category="Rtr" countryCode="US" productId="417" operator="Lyca Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="421" carrierName="8ta South Africa" category="Rtr" countryCode="ZA" productId="421" operator="8ta" denominationType="Fixed"/>
+                    <carrier carrierId="422" carrierName="Cell-C South Africa" category="Rtr" countryCode="ZA" productId="422" operator="Cell-C" denominationType="Fixed"/>
+                    <carrier carrierId="423" carrierName="Vodacom South Africa" category="Rtr" countryCode="ZA" productId="423" operator="Vodafone" denominationType="Fixed"/>
+                    <carrier carrierId="424" carrierName="MTN South Africa" category="Rtr" countryCode="ZA" productId="424" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="426" carrierName="Yu Kenya" category="Rtr" countryCode="KE" productId="426" operator="Yu" denominationType="Fixed"/>
+                    <carrier carrierId="428" carrierName="N-Cell Nepal" category="Rtr" countryCode="NP" productId="428" operator="Ncell" denominationType="Variable"/>
+                    <carrier carrierId="429" carrierName="Maxis Malaysia" category="Rtr" countryCode="MY" productId="429" operator="Maxis" denominationType="Fixed"/>
+                    <carrier carrierId="430" carrierName="MTN Yemen" category="Rtr" countryCode="YE" productId="430" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="433" carrierName="Orange Moldova" category="Rtr" countryCode="MD" productId="433" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="434" carrierName="Safaricom kenya" category="Rtr" countryCode="KE" productId="434" operator="Safaricom" denominationType="Fixed"/>
+                    <carrier carrierId="436" carrierName="Moldcell Moldova" category="Rtr" countryCode="MD" productId="436" operator="Moldcell" denominationType="Fixed"/>
+                    <carrier carrierId="437" carrierName="Avea Turkey" category="Rtr" countryCode="TR" productId="437" operator="Avea" denominationType="Fixed"/>
+                    <carrier carrierId="438" carrierName="Turkcell Turkey" category="Rtr" countryCode="TR" productId="438" operator="Turkcell" denominationType="Fixed"/>
+                    <carrier carrierId="439" carrierName="Vodafone Turkey" category="Rtr" countryCode="TR" productId="439" operator="Vodafone" denominationType="Fixed"/>
+                    <carrier carrierId="440" carrierName="MTN Cameroon" category="Rtr" countryCode="CM" productId="440" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="442" carrierName="Glo Ghana" category="Rtr" countryCode="GH" productId="442" operator="Glo" denominationType="Fixed"/>
+                    <carrier carrierId="443" carrierName="MTN Swaziland" category="Rtr" countryCode="SZ" productId="443" operator="MTN" denominationType="Fixed"/>
+                    <carrier carrierId="444" carrierName="Econet Zimbabwe" category="Rtr" countryCode="ZW" productId="444" operator="Econet" denominationType="Fixed"/>
+                    <carrier carrierId="445" carrierName="Netone Zimbabwe" category="Rtr" countryCode="ZW" productId="445" operator="Netone Zimbabwe" denominationType="Fixed"/>
+                    <carrier carrierId="447" carrierName="Beeline Laos" category="Rtr" countryCode="LO" productId="447" operator="Beeline" denominationType="Fixed"/>
+                    <carrier carrierId="448" carrierName="Airtel Sri lanka" category="Rtr" countryCode="LK" productId="448" operator="Airtel" denominationType="Variable"/>
+                    <carrier carrierId="449" carrierName="Dialog Sri Lanka" category="Rtr" countryCode="LK" productId="449" operator="Dialog" denominationType="Variable"/>
+                    <carrier carrierId="450" carrierName="Hutch Sri Lanka" category="Rtr" countryCode="LK" productId="450" operator="Hutch" denominationType="Variable"/>
+                    <carrier carrierId="451" carrierName="Mobitel Sri Lanka" category="Rtr" countryCode="LK" productId="451" operator="Mobitel" denominationType="Variable"/>
+                    <carrier carrierId="452" carrierName="GTT Guyana" category="Rtr" countryCode="GY" productId="452" operator="GTT" denominationType="Variable"/>
+                    <carrier carrierId="453" carrierName="Airtel kenya" category="Rtr" countryCode="KE" productId="453" operator="Airtel" denominationType="Fixed"/>
+                    <carrier carrierId="462" carrierName="Lyca Sim(No commission)" category="Sim" countryCode="US" productId="462" operator="Lyca" denominationType="Fixed"/>
+                    <carrier carrierId="468" carrierName="Envie Mobile" category="Pin" countryCode="US" productId="468" operator="Envie Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="469" carrierName="Telemedia Belize" category="Rtr" countryCode="BZ" productId="469" operator="Telemedia" denominationType="Variable"/>
+                    <carrier carrierId="471" carrierName="Red Pocket Universal " category="Pin" countryCode="US" productId="471" operator="Red Pocket" denominationType="Fixed"/>
+                    <carrier carrierId="472" carrierName="Digicel El Salvador - Bundle plan" category="Rtr" countryCode="SV" productId="472" operator="Digicel" denominationType="Fixed"/>
+                    <carrier carrierId="475" carrierName="AT&amp;T RTR $10" category="Rtr" countryCode="US" productId="475" operator="AT&amp;T" denominationType="Fixed"/>
+                    <carrier carrierId="478" carrierName="Orange-Cameroon" category="Rtr" countryCode="CM" productId="478" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="480" carrierName="Orange-Mali" category="Rtr" countryCode="ML" productId="480" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="481" carrierName="Idirect Dial" category="Rtr" countryCode="US" productId="481" operator="Voxplus" denominationType="Variable"/>
+                    <carrier carrierId="482" carrierName="Orange-Senegal" category="Rtr" countryCode="SN" productId="482" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="483" carrierName="Orange-Guinea" category="Rtr" countryCode="GN" productId="483" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="485" carrierName="Orange-Madagascar" category="Rtr" countryCode="MG" productId="485" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="486" carrierName="Orange-Niger" category="Rtr" countryCode="NE" productId="486" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="487" carrierName="Orange-Tunisia" category="Rtr" countryCode="TN" productId="487" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="489" carrierName="Orange-Republic Of Congo" category="Rtr" countryCode="CD" productId="489" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="490" carrierName="Orange-Guinée Bissau" category="Rtr" countryCode="GW" productId="490" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="491" carrierName="Orange-CFA" category="Rtr" countryCode="CF" productId="491" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="492" carrierName="Orange-Ivory Coast" category="Rtr" countryCode="CI" productId="492" operator="Orange" denominationType="Fixed"/>
+                    <carrier carrierId="493" carrierName="Vodacom Tanzania" category="Rtr" countryCode="TZ" productId="493" operator="Vodacom" denominationType="Variable"/>
+                    <carrier carrierId="495" carrierName="Telkom-Kenya" category="Rtr" countryCode="KE" productId="495" operator="Telkom" denominationType="Fixed"/>
+                    <carrier carrierId="496" carrierName="Onatel-Burkino faso" category="Rtr" countryCode="BF" productId="496" operator="Onatel" denominationType="Fixed"/>
+                    <carrier carrierId="497" carrierName="Maroc-Telecom" category="Rtr" countryCode="MA" productId="497" operator="Maroc Telecom " denominationType="Fixed"/>
+                    <carrier carrierId="498" carrierName="Meditel-Morocco" category="Rtr" countryCode="MA" productId="498" operator="Meditel" denominationType="Fixed"/>
+                    <carrier carrierId="499" carrierName="Cubacel open range" category="Rtr" countryCode="CU" productId="499" operator="Cubacel" denominationType="Variable"/>
+                    <carrier carrierId="503" carrierName="Airtel-kenya" category="Rtr" countryCode="KE" productId="503" operator="Airtel" denominationType="Variable"/>
+                    <carrier carrierId="508" carrierName="Airtel-Ghana" category="Rtr" countryCode="GH" productId="508" operator="Airtel" denominationType="Variable"/>
+                    <carrier carrierId="510" carrierName="Africell Gambia" category="Rtr" countryCode="GM" productId="510" operator="Africell " denominationType="Variable"/>
+                    <carrier carrierId="512" carrierName="Unefone MXN" category="Rtr" countryCode="MX" productId="512" operator="Unefon" denominationType="Fixed"/>
+                    <carrier carrierId="513" carrierName="IUsacell MXN" category="Rtr" countryCode="MX" productId="513" operator="Iusacell" denominationType="Fixed"/>
+                    <carrier carrierId="514" carrierName="Tigo Rwanda" category="Rtr" countryCode="RW" productId="514" operator="Tigo" denominationType="Variable"/>
+                    <carrier carrierId="526" carrierName="Digicel Anguilla" category="Rtr" countryCode="AI" productId="526" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="527" carrierName="Digicel Bermuda" category="Rtr" countryCode="BM" productId="527" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="528" carrierName="Digicel Cayman Islands" category="Rtr" countryCode="KY" productId="528" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="529" carrierName="Digicel Virgin Islands (British)" category="Rtr" countryCode="VG" productId="529" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="530" carrierName="Digicel T&amp;T Bundle" category="Rtr" countryCode="TT" productId="530" operator="Digicel" denominationType="Fixed"/>
+                    <carrier carrierId="531" carrierName="MTS Armenia" category="Rtr" countryCode="AM" productId="531" operator="MTS" denominationType="Variable"/>
+                    <carrier carrierId="532" carrierName="Telecel-Zimbabwe" category="Rtr" countryCode="ZW" productId="532" operator="Telecel" denominationType="Variable"/>
+                    <carrier carrierId="537" carrierName="Yourtel" category="Rtr" countryCode="US" productId="537" operator="Yourtel" denominationType="Fixed"/>
+                    <carrier carrierId="538" carrierName="Yourtel Data plan" category="Rtr" countryCode="US" productId="538" operator="Yourtel" denominationType="Fixed"/>
+                    <carrier carrierId="540" carrierName="Digicel Jamaica Bundle Plans" category="Rtr" countryCode="JM" productId="540" operator="Digicel" denominationType="Fixed"/>
+                    <carrier carrierId="542" carrierName="Claro DR open range" category="Rtr" countryCode="DO" productId="542" operator="Claro" denominationType="Variable"/>
+                    <carrier carrierId="549" carrierName="Orange DR open range" category="Rtr" countryCode="DO" productId="549" operator="Orange" denominationType="Variable"/>
+                    <carrier carrierId="550" carrierName="Tigo Honduras Paquetigo " category="Rtr" countryCode="HN" productId="550" operator="Tigo" denominationType="Fixed"/>
+                    <carrier carrierId="551" carrierName="Expresso Telecom - Senegal " category="Rtr" countryCode="SN" productId="551" operator="Expresso" denominationType="Variable"/>
+                    <carrier carrierId="552" carrierName="Airtel-Rwanda" category="Rtr" countryCode="RW" productId="552" operator="Airtel" denominationType="Variable"/>
+                    <carrier carrierId="557" carrierName="Tricom Dominic Republic" category="Rtr" countryCode="DO" productId="557" operator="Tricom" denominationType="Fixed"/>
+                    <carrier carrierId="560" carrierName="Glo-Ghana" category="Rtr" countryCode="GH" productId="560" operator="Glo" denominationType="Variable"/>
+                    <carrier carrierId="561" carrierName="Movicel Angola" category="Rtr" countryCode="AO" productId="561" operator="Movicel" denominationType="Variable"/>
+                    <carrier carrierId="562" carrierName="Airtel Bangladesh" category="Rtr" countryCode="BD" productId="562" operator="Airtel" denominationType="Variable"/>
+                    <carrier carrierId="563" carrierName="Vodacom Mozambique" category="Rtr" countryCode="MZ" productId="563" operator="Vodacom" denominationType="Variable"/>
+                    <carrier carrierId="564" carrierName="Moov CAR" category="Rtr" countryCode="CF" productId="564" operator="Moov" denominationType="Variable"/>
+                    <carrier carrierId="567" carrierName="Tigo-Senegal New" category="Rtr" countryCode="SN" productId="567" operator="Tigo" denominationType="Variable"/>
+                    <carrier carrierId="568" carrierName="Smart Tanzania" category="Rtr" countryCode="TZ" productId="568" operator="Smart" denominationType="Variable"/>
+                    <carrier carrierId="569" carrierName="Tigo EL Salvador Paquetigo " category="Rtr" countryCode="SV" productId="569" operator="Tigo" denominationType="Fixed"/>
+                    <carrier carrierId="572" carrierName="Tigo Guatemala Paquetigo" category="Rtr" countryCode="GT" productId="572" operator="Tigo" denominationType="Fixed"/>
+                    <carrier carrierId="574" carrierName="EasyGo" category="Pin" countryCode="US" productId="574" operator="EasyGo" denominationType="Fixed"/>
+                    <carrier carrierId="575" carrierName="Movistar Costa Rica" category="Rtr" countryCode="CR" productId="575" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="576" carrierName="Vodafone Romania" category="Rtr" countryCode="RO" productId="576" operator="Vodafone" denominationType="Variable"/>
+                    <carrier carrierId="577" carrierName="Ucell Uzbekistan" category="Rtr" countryCode="UZ" productId="577" operator="Ucell" denominationType="Variable"/>
+                    <carrier carrierId="578" carrierName="Vodafone Ghana Open Range" category="Rtr" countryCode="GH" productId="578" operator="Vodafone" denominationType="Variable"/>
+                    <carrier carrierId="579" carrierName="Brasil Telecom Brazil" category="Rtr" countryCode="BR" productId="579" operator="Brasil Telecom" denominationType="Fixed"/>
+                    <carrier carrierId="580" carrierName="Univision Wallet $2.50-$10 RTR" category="Rtr" countryCode="US" productId="580" operator="Univision Mobile" denominationType="Variable"/>
+                    <carrier carrierId="584" carrierName="Univision Wallet $10.01-$100 RTR" category="Rtr" countryCode="US" productId="584" operator="Univision Mobile" denominationType="Variable"/>
+                    <carrier carrierId="585" carrierName="Africell Sierra Leone" category="Rtr" countryCode="SL" productId="585" operator="Africell " denominationType="Variable"/>
+                    <carrier carrierId="586" carrierName="H2O RTR - Unlimited plans" category="Rtr" countryCode="US" productId="586" operator="H2O" denominationType="Fixed"/>
+                    <carrier carrierId="587" carrierName="Africell Uganda" category="Rtr" countryCode="UG" productId="587" operator="Africell " denominationType="Variable"/>
+                    <carrier carrierId="588" carrierName="Digicel Haiti Online " category="Rtr" countryCode="HT" productId="588" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="589" carrierName="Digicel Haiti Online Data plan" category="Rtr" countryCode="HT" productId="589" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="592" carrierName="Digicel Jamaica Online - Bundle Plans" category="Rtr" countryCode="JM" productId="592" operator="Digicel" denominationType="Fixed"/>
+                    <carrier carrierId="593" carrierName="Etisalat-Nigeria" category="Rtr" countryCode="NG" productId="593" operator="Etisalat" denominationType="Variable"/>
+                    <carrier carrierId="594" carrierName="Cubacel - IV" category="Rtr" countryCode="CU" productId="594" operator="Cubacel" denominationType="Fixed"/>
+                    <carrier carrierId="595" carrierName="Rok Mobile CDMA" category="Rtr" countryCode="US" productId="595" operator="Rok Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="596" carrierName="Digicel Jamaica Online" category="Rtr" countryCode="JM" productId="596" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="597" carrierName="Moov Gabon" category="Rtr" countryCode="GA" productId="597" operator="Moov" denominationType="Fixed"/>
+                    <carrier carrierId="598" carrierName="BlueSky American Samoa" category="Rtr" countryCode="AS" productId="598" operator="BlueSky" denominationType="Variable"/>
+                    <carrier carrierId="599" carrierName="BTC Bahamas" category="Rtr" countryCode="BS" productId="599" operator="BTC" denominationType="Variable"/>
+                    <carrier carrierId="603" carrierName="BlueSky Samoa" category="Rtr" countryCode="WS" productId="603" operator="BlueSky" denominationType="Variable"/>
+                    <carrier carrierId="611" carrierName="UT Mobile Uganda" category="Rtr" countryCode="UG" productId="611" operator="Uganda Telecom" denominationType="Variable"/>
+                    <carrier carrierId="616" carrierName="EasyGo RTR" category="Rtr" countryCode="US" productId="616" operator="EasyGo" denominationType="Fixed"/>
+                    <carrier carrierId="620" carrierName="Aircel-India " category="Rtr" countryCode="IN" productId="620" operator="Aircel" denominationType="Fixed"/>
+                    <carrier carrierId="621" carrierName="Airtel-India" category="Rtr" countryCode="IN" productId="621" operator="Airtel" denominationType="Fixed"/>
+                    <carrier carrierId="622" carrierName="BSNL-India" category="Rtr" countryCode="IN" productId="622" operator="BSNL " denominationType="Fixed"/>
+                    <carrier carrierId="623" carrierName="Idea- India" category="Rtr" countryCode="IN" productId="623" operator="Idea" denominationType="Fixed"/>
+                    <carrier carrierId="625" carrierName="MTS- India RTR" category="Rtr" countryCode="IN" productId="625" operator="MTS" denominationType="Fixed"/>
+                    <carrier carrierId="628" carrierName="Tata Docomo-India RTR" category="Rtr" countryCode="IN" productId="628" operator="Tata Docomo" denominationType="Fixed"/>
+                    <carrier carrierId="629" carrierName="Uninor-India RTR" category="Rtr" countryCode="IN" productId="629" operator="Uninor" denominationType="Fixed"/>
+                    <carrier carrierId="630" carrierName="Vodafone - India RTR" category="Rtr" countryCode="IN" productId="630" operator="Vodafone" denominationType="Fixed"/>
+                    <carrier carrierId="634" carrierName="Glo Benin" category="Rtr" countryCode="BJ" productId="634" operator="Glo" denominationType="Variable"/>
+                    <carrier carrierId="635" carrierName="Smart Burundi" category="Rtr" countryCode="BI" productId="635" operator="Smart" denominationType="Variable"/>
+                    <carrier carrierId="637" carrierName="LycaMobile_Sim" category="Sim" countryCode="US" productId="637" operator="Lyca Mobile" denominationType="Fixed"/>
+                    <carrier carrierId="638" carrierName="Digicel Haiti Prepaid plan" category="Rtr" countryCode="HT" productId="638" operator="Digicel" denominationType="Fixed"/>
+                    <carrier carrierId="639" carrierName="Digicel Haiti Online Prepaid plan" category="Rtr" countryCode="HT" productId="639" operator="Digicel" denominationType="Fixed"/>
+                    <carrier carrierId="640" carrierName="Claro Costa Rica Superpack" category="Rtr" countryCode="CR" productId="640" operator="Claro" denominationType="Fixed"/>
+                    <carrier carrierId="641" carrierName="Claro El salvador Super pack" category="Rtr" countryCode="SV" productId="641" operator="Claro" denominationType="Fixed"/>
+                    <carrier carrierId="642" carrierName="Claro Guatemala Super Pack" category="Rtr" countryCode="GT" productId="642" operator="Claro" denominationType="Fixed"/>
+                    <carrier carrierId="643" carrierName="Claro Honduras SuperPack" category="Rtr" countryCode="HN" productId="643" operator="Claro" denominationType="Fixed"/>
+                    <carrier carrierId="644" carrierName="Claro Nicaragua SuperPack" category="Rtr" countryCode="NI" productId="644" operator="Claro" denominationType="Fixed"/>
+                    <carrier carrierId="645" carrierName="Tigo Tanzania" category="Rtr" countryCode="TZ" productId="645" operator="Tigo" denominationType="Variable"/>
+                    <carrier carrierId="646" carrierName="Digicel TT Online" category="Rtr" countryCode="TT" productId="646" operator="Digicel" denominationType="Variable"/>
+                    <carrier carrierId="647" carrierName="Digicel El Salvador - Bundle plan Online" category="Rtr" countryCode="SV" productId="647" operator="Digicel" denominationType="Fixed"/>
+                    <carrier carrierId="655" carrierName="Personal Paraguay" category="Rtr" countryCode="PY" productId="655" operator="Personal" denominationType="Variable"/>
+                    <carrier carrierId="657" carrierName="Orange Moldovia" category="Rtr" countryCode="MD" productId="657" operator="Orange" denominationType="Variable"/>
+                    <carrier carrierId="658" carrierName="T-mobile Bill payment" category="Bill Pay" countryCode="US" productId="658" operator="T-Mobile" denominationType="Variable"/>
+                    <carrier carrierId="660" carrierName="Verizon Bill Payment" category="Bill Pay" countryCode="US" productId="660" operator="Verizon" denominationType="Variable"/>
+                    <carrier carrierId="677" carrierName="Brasil Telecom - Brazil " category="Rtr" countryCode="BR" productId="677" operator="Brasil Telecom" denominationType="Fixed"/>
+                    <carrier carrierId="683" carrierName="Oredoo Tunisiana" category="Rtr" countryCode="TN" productId="683" operator="Oredoo" denominationType="Variable"/>
+                    <carrier carrierId="692" carrierName="Entel Chile" category="Rtr" countryCode="CL" productId="692" operator="Entel" denominationType="Variable"/>
+                    <carrier carrierId="693" carrierName="Movistar Chile" category="Rtr" countryCode="CL" productId="693" operator="Movistar" denominationType="Variable"/>
+                    <carrier carrierId="694" carrierName="Virgin Mobile Chile" category="Rtr" countryCode="CL" productId="694" operator="Virgin Mobile" denominationType="Variable"/>
+                    <carrier carrierId="695" carrierName="Eco Mobile RTR" category="Rtr" countryCode="US" productId="695" operator="Ecomobile" denominationType="Fixed"/>
+                    <carrier carrierId="697" carrierName="Zamtel Zambia" category="Rtr" countryCode="ZM" productId="697" operator="Zain" denominationType="Variable"/>
                 </carriers>
             </carrierListResponse>
         </GetCarrierList2Response>

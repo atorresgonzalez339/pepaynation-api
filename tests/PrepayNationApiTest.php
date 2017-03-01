@@ -54,14 +54,14 @@ class PrepayNationApiTest extends \PHPUnit_Framework_TestCase
     {
         $carriers = $this->api->getCarrierList(null, 'USD');
         $carrier = $carriers[0];
-        self::assertEquals('ATT', $carrier->getCarrierName());
+        self::assertEquals('AT&T PIN US ', $carrier->getCarrierName());
     }
 
     public function testGetSkuList()
     {
         $skus = $this->api->getSkuList();
         $sku = $skus[0];
-        self::assertEquals('Natcom Haiti $6-100', $sku->getProductName());
+        self::assertEquals('8ta South Africa $5.40', $sku->getProductName());
     }
 
     public function testGetSkuListByCarrier()
