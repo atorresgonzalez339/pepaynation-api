@@ -22,6 +22,8 @@ use YnloUltratech\PrepayNation\Data\Carrier;
 use YnloUltratech\PrepayNation\Data\Sku;
 use YnloUltratech\PrepayNation\Service\GetCarrierInfoByMobileNumber\GetCarrierInfoByMobileNumber;
 use YnloUltratech\PrepayNation\Service\GetCarrierInfoByMobileNumber\GetCarrierInfoByMobileNumberResponse;
+use YnloUltratech\PrepayNation\Service\BalanceInquiry\BalanceInquiry;
+use YnloUltratech\PrepayNation\Service\BalanceInquiry\BalanceInquiryResponse;
 use YnloUltratech\PrepayNation\Service\GetCarrierList\GetCarrierList;
 use YnloUltratech\PrepayNation\Service\GetCarrierList\GetCarrierListResponse;
 use YnloUltratech\PrepayNation\Service\GetSkuList\GetSkuList;
@@ -163,6 +165,12 @@ class PrepayNationApi extends GenericApi
         return (new PurchasePinResponse($response));
     }
 
+    public function balanceInquiry()
+    {
+        $response = $this->process(new BalanceInquiry());
+
+        return (new BalanceInquiryResponse($response));
+    }
 
     /**
      * {@inheritdoc}
