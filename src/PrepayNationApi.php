@@ -46,6 +46,11 @@ class PrepayNationApi extends GenericApi
     private $credentials;
 
     /**
+     * @var string
+     */
+    private $url;
+
+    /**
      * @return PrepayNationApiCredentials
      */
     public function getCredentials()
@@ -67,6 +72,22 @@ class PrepayNationApi extends GenericApi
         $this->credentials = $credentials;
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+    /**
+     * @param string $url
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
     }
 
     /**

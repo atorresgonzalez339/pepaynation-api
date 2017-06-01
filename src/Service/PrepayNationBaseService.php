@@ -62,7 +62,7 @@ abstract class PrepayNationBaseService implements ApiServiceInterface
         $xml = Array2XML::createXML('soap12:Envelope', $envelope)->saveXML();
 
         $requestBuilder
-            ->withUri('http://www.valuetopup.com/posaservice/servicemanager.asmx')
+            ->withUri($api->getUrl())
             ->withMethod('POST')
             ->withXMLBody($xml);
     }
